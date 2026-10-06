@@ -3,6 +3,9 @@
 *.fig
 *.xd
 
+# Compiled CSS from Sass
+/css
+
 # Dependencies
 /node_modules
 /.pnp

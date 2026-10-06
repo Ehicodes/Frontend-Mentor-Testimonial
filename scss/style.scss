@@ -1,0 +1,157 @@
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;  /* 10px/16px = 62.5 1rem = 10px */
+  box-sizing: border-box;
+}
+
+//Colors
+$background: hsl(210, 10%, 95%);
+
+
+$card-bg-light: hsl(0, 0%, 100%);
+$card-bg-dark-blue: hsl(219, 29%, 14%);
+$card-bg-grey: hsl(217, 19%, 35%);
+$card-bg-purple: hsl(263, 55%, 52%);
+
+$text-dark: hsl(217, 19%, 35%);
+$text-black: hsl(0, 0%, 7%);
+$text-light: hsl(214, 17%, 92%);
+
+$box-shadow: rgba(17, 24, 39, 0.12);
+
+$border-purple: hsl(264, 82%, 80%);
+$light-purple: hsl(260, 100%, 95%);
+$medium-grey: hsl(224, 10%, 45%);
+$light-grey: hsl(0, 0%, 81%);
+
+//Typography'
+$font-family: "Barlow Semi Condensed", sans-serif;
+$font-weight-light: 400;
+$font-weight-normal: 500;
+$font-weight-bold: 600;
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: $font-family;
+  background: $background;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.testimonials {
+  width: min(100%, 112rem);
+  display: grid;
+  gap: 3rem;
+}
+
+.testimonial {
+    color: $text-light;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 2.5rem 5rem -2rem $box-shadow;
+
+    &--daniel{
+        background-color: $card-bg-purple;
+        img{
+            border: .2rem solid $border-purple;
+        }
+    }
+    &--jonathan{
+         background-color: $card-bg-grey;
+    }
+    &--jeanette,
+    &--kira{
+         background-color: $card-bg-light;
+          color: $text-dark;
+          .testimonial__person{
+            h2{
+             color: $text-dark;
+            }
+            p{
+                color: $text-black;
+            }
+          }
+    }
+    &--patrick{
+          background-color: $card-bg-dark-blue;
+          img{
+            border: .2rem solid $card-bg-purple;
+          }
+          .testimonial__person{
+            p{
+            opacity: 0.9;
+            }
+          }
+    }
+    &__header{
+        display: flex;
+        gap: 1.5rem;
+        flex-direction: row;
+        margin-bottom: 1rem;
+
+        img{
+            display: block;
+               width: 3.2rem;
+                 height: 3.2rem;
+                border-radius: 50%;
+            
+        }
+    }
+
+     &__person{
+             color: $text-light;
+            h2{
+                font-weight: $font-weight-normal;
+                margin-bottom: 0.2rem;
+            }
+            p{
+                font-size: 1.25rem;
+                opacity: 0.6;
+                 font-weight: $font-weight-light;
+            }
+        }
+
+        h3{
+            font-size: 2rem;
+            font-weight: $font-weight-bold;
+            margin-bottom: 1.5rem;
+        }
+
+        blockquote{
+            font-size: 1.3rem;
+            line-height: 1.4;
+            opacity: 0.8;
+            font-weight: $font-weight-normal;
+        }
+}
+
+.attribution {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: center;
+  color: $medium-grey;
+
+  a {
+    color: $card-bg-purple;
+    font-weight: $font-weight-bold;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}

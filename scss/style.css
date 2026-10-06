@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* 10px/16px = 62.5 1rem = 10px */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background: hsl(210, 10%, 95%);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.testimonials {
+  width: min(100%, 112rem);
+  display: grid;
+  gap: 3rem;
+}
+
+.testimonial {
+  color: hsl(214, 17%, 92%);
+  padding: 2rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 2.5rem 5rem -2rem rgba(17, 24, 39, 0.12);
+}
+.testimonial--daniel {
+  background-color: hsl(263, 55%, 52%);
+}
+.testimonial--daniel img {
+  border: 0.2rem solid hsl(264, 82%, 80%);
+}
+.testimonial--jonathan {
+  background-color: hsl(217, 19%, 35%);
+}
+.testimonial--jeanette, .testimonial--kira {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+}
+.testimonial--jeanette .testimonial__person h2, .testimonial--kira .testimonial__person h2 {
+  color: hsl(217, 19%, 35%);
+}
+.testimonial--jeanette .testimonial__person p, .testimonial--kira .testimonial__person p {
+  color: hsl(0, 0%, 7%);
+}
+.testimonial--patrick {
+  background-color: hsl(219, 29%, 14%);
+}
+.testimonial--patrick img {
+  border: 0.2rem solid hsl(263, 55%, 52%);
+}
+.testimonial--patrick .testimonial__person p {
+  opacity: 0.9;
+}
+.testimonial__header {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+.testimonial__header img {
+  display: block;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+}
+.testimonial__person {
+  color: hsl(214, 17%, 92%);
+}
+.testimonial__person h2 {
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+.testimonial__person p {
+  font-size: 1.25rem;
+  opacity: 0.6;
+  font-weight: 400;
+}
+.testimonial h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.testimonial blockquote {
+  font-size: 1.3rem;
+  line-height: 1.4;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+.attribution {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: center;
+  color: hsl(224, 10%, 45%);
+}
+.attribution a {
+  color: hsl(263, 55%, 52%);
+  font-weight: 600;
+  text-decoration: none;
+}
+.attribution a:hover, .attribution a:focus {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */
