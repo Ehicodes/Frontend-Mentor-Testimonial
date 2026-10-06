@@ -12,12 +12,9 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
   - [AI Collaboration](#ai-collaboration)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -26,18 +23,12 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
+- Read a grid of testimonial cards with clear hierarchy and readable content
+- See the design adapt cleanly from a mobile stack to a desktop multi-column layout
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](images/Screenshot%20.jpg)
 
 ### Links
 
@@ -53,69 +44,39 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Sass
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This project helped reinforce the value of mobile-first design and component-based styling. I learned how to structure a layout so the cards stack cleanly on small screens and then transition into a multi-column grid on larger screens.
 
-To see how you can add code snippets, see below:
+I also gained more confidence working with:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+- CSS Grid for positioning cards in a responsive layout
+- pseudo-elements for decorative accents like the purple quote mark
+- BEM-style naming for reusable modifiers such as `testimonial--daniel` and `testimonial--patrick`
+- Sass variables to keep colors and spacing consistent across the design
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+In future projects, I want to keep improving my ability to:
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- build more complex responsive layouts with confidence
+- create polished visual details that match a mockup more closely
+- write cleaner, more maintainable Sass and component naming patterns
+- work more efficiently with accessibility and spacing decisions
 
 ### AI Collaboration
 
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
+I used AI to help review the structure, debug styling issues, and refine the responsive layout decisions. It was especially useful for checking the visual logic behind the grid arrangement, color usage, and card modifiers.
 
-- What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
-- How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
-- What worked well? What didn't?
-
-**Note: Delete this note and the content above if you didn't use AI, or replace with your own experience.**
+The process worked well for speeding up iteration and spotting layout inconsistencies, while still requiring me to review and adjust the final implementation carefully.
 
 ## Author
+- Github - [Ehicodes](https://github.com/Ehicodes)
+- Frontend Mentor - [@Ehicodes](https://www.frontendmentor.io/profile/@Ehicodes)
+- X - [@Ehinomen_01](https://x.com/Ehinomen_01)
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
-## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**

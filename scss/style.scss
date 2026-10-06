@@ -53,8 +53,16 @@ body {
 
 .testimonials {
   width: min(100%, 112rem);
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 3rem;
+ 
+  @media only screen and (min-width: 43.7em) {
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
 }
 
 .testimonial {
@@ -62,16 +70,54 @@ body {
     padding: 2rem;
     border-radius: 1.2rem;
     box-shadow: 0 2.5rem 5rem -2rem $box-shadow;
+    position: relative;
+    overflow: hidden;
 
     &--daniel{
         background-color: $card-bg-purple;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+        }
+
         img{
             border: .2rem solid $border-purple;
         }
+
+        h3,
+        blockquote,
+        .testimonial__header,
+        .testimonial__person {
+            position: relative;
+            z-index: 1;
+        }
+
+          @media only screen and (min-width: 43.7em) {
+          grid-column: 1/3;
+          grid-row: 1/2;
+
+          &::before {
+            content: "“";
+            position: absolute;
+            top: -2.8rem;
+            right: 1.5rem;
+            font-size: 22rem;
+            line-height: 1;
+            font-weight: $font-weight-bold;
+            color: rgba(255, 255, 255, 0.18);
+            z-index: 0;
+          }
+  }
+
     }
     &--jonathan{
          background-color: $card-bg-grey;
+         grid-column: 3/4;
+         grid-row: 1/2;
     }
+
     &--jeanette,
     &--kira{
          background-color: $card-bg-light;
@@ -85,6 +131,20 @@ body {
             }
           }
     }
+    &--kira{
+        @media only screen and (min-width: 43.7em) {
+            grid-column: 4/-1;
+            grid-row: 1 / 3;
+        }
+    }
+
+    &--jeanette{
+        @media only screen and (min-width: 43.7em) { 
+          grid-column: 1/2;
+          grid-row: 2/3;
+       }
+    }
+    
     &--patrick{
           background-color: $card-bg-dark-blue;
           img{
@@ -95,6 +155,11 @@ body {
             opacity: 0.9;
             }
           }
+
+            @media only screen and (min-width: 43.7em) {
+                grid-column: 2/4;
+                grid-row: 2/3;
+            }
     }
     &__header{
         display: flex;
@@ -128,13 +193,16 @@ body {
             font-size: 2rem;
             font-weight: $font-weight-bold;
             margin-bottom: 1.5rem;
+    
         }
-
         blockquote{
             font-size: 1.3rem;
             line-height: 1.4;
             opacity: 0.8;
             font-weight: $font-weight-normal;
+               @media only screen and (min-width: 43.7em){
+                            font-size: 1.6rem;
+            }
         }
 }
 
@@ -143,6 +211,9 @@ body {
   line-height: 1.5;
   text-align: center;
   color: $medium-grey;
+     @media only screen and (min-width: 43.7em){
+                            font-size: 2rem;
+            }
 
   a {
     color: $card-bg-purple;
